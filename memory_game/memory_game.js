@@ -102,8 +102,8 @@ class Card {
 }
 
 class Game {
-  constructor(nbRows, nbColumns) {
-    this.gridObj = new Grid(nbRows, nbColumns)
+  constructor() {
+    this.gridObj = new Grid()
     let nbRounds = 0
     while (!this.gridObj.isComplete()) {
       this.gameLoop();
